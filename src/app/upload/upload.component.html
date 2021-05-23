@@ -1,0 +1,8 @@
+<h1>Upload Your Image</h1>
+<form [formGroup]="imageForm" (ngSubmit)="onSave()" id="img1">
+    <div class="formGroup" id="image-1">
+        <input type="file" id="myfile" formControlName='image' name="filename">
+    </div>
+
+    <button id="btn" type="submit" ></button>
+</form>
