@@ -1,5 +1,5 @@
 import { Component ,OnInit} from '@angular/core';
-import { WebSocketService } from './web-socket.service';
+// import { WebSocketService } from './web-socket.service';
 
 @Component({
   selector: 'app-root',
@@ -9,13 +9,13 @@ import { WebSocketService } from './web-socket.service';
 export class AppComponent {
   title = 'my-new-angular-app';
 
-  constructor(private webSocketService:WebSocketService){
+  // constructor(private webSocketService:WebSocketService){
 
   }
 
-  ngOnInit(){
-    this.webSocketService.listen('test event').subscribe((data)=>{
-      console.log(data);
-    })
-  }
-}
+  // ngOnInit(){
+  //   this.webSocketService.listen('test event').subscribe((data)=>{
+  //     console.log(data);
+  //   })
+  // }}
+

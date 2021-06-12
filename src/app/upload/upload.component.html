@@ -1,8 +1,35 @@
-<h1>Upload Your Image</h1>
-<form [formGroup]="imageForm" (ngSubmit)="onSave()" id="img1">
-    <div class="formGroup" id="image-1">
-        <input type="file" id="myfile" formControlName='image' name="filename">
-    </div>
+<div class = "upload-page">
+<h1 class="center">Upload Your Image</h1>
 
-    <button id="btn" type="submit" ></button>
+<div class="videos">
+    <div class = "video-widget">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore expedita illum, alias perferendis vel, repellendus laboriosam doloremque maxime nulla inventore nam cumque architecto quasi? Excepturi animi ex ullam odio provident?
+    </div>
+    <div class = "video-widget">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit porro aspernatur aperiam sunt quibusdam iure corporis nesciunt alias voluptates sint, adipisci excepturi ad odio laboriosam totam nobis. Iure, quo neque!
+    </div>
+    <div class = "video-widget">
+    </div>
+</div>
+
+
+<form [formGroup]="imageForm" (ngSubmit)="onSave()" id="img1">
+    <div class="center">
+        <p>Please select video type:</p>
+    
+        <label for="vid1"> video 1</label>
+        <input type="radio" id="vid1" formControlName='video'  value="video 1">
+        
+        <label for="vid2"> video 2</label>
+        <input type="radio" id="vid2" formControlName='video'  value="video 2">
+       
+        <label for="vid3">video 3</label>    
+        <input type="radio" id="vid3" formControlName='video' value="video 3">
+    
+    </div>    
+    <div class="formGroup center custom-file-input" id="image-1">
+        <input type="file" id="myfile"  formControlName='image' name="filename">
+    </div>
+    <br>
+    
+    <button class="button" type="submit" [disabled] = "imageForm.invalid" >Submit</button>
 </form>
+</div>

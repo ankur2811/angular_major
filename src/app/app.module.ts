@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { UploadComponent } from './upload/upload.component';
 import {RouterModule} from '@angular/router';
+import { VideoComponent } from './video/video.component';
 
 const routes=[
-  {path:'land',component:LandingpageComponent},{path:'upload',component:UploadComponent},
+  {path:'land',component:LandingpageComponent},{path:'upload',component:UploadComponent}, {path:'video',component:VideoComponent},
 
 {path:'**',redirectTo:'/land'}];
 
@@ -16,7 +17,8 @@ const routes=[
   declarations: [
     AppComponent,
     LandingpageComponent,
-    UploadComponent
+    UploadComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,
